@@ -14,3 +14,18 @@ if (toggle && nav) {
     nav.classList.toggle('open');
   });
 }
+
+const currentPage = document.body?.dataset?.page;
+const navItems = document.querySelectorAll('.main-nav li');
+if (currentPage && navItems.length) {
+  navItems.forEach((item) => {
+    const link = item.querySelector('a');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    const isHome = currentPage === 'home' && href.endsWith('index.html');
+    const matchesPage = href.includes(`${currentPage}.html`);
+    if (isHome || matchesPage) {
+      item.classList.add('active');
+    }
+  });
+}
