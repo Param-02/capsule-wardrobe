@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wardrobe Builder | Capsule Wardrobe Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="builder page" data-page="builder">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="branding" href="index.html">
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <span class="tagline">Curated essentials for every day confidence</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <ul id="primary-nav">
+            <li class="active"><a href="builder.html">Build</a></li>
+            <li><a href="lookbooks.html">Lookbooks</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero sub">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Interactive blueprint</span>
+            <h1>Build your capsule wardrobe</h1>
+            <p>
+              Answer four quick questions about your body type, color palette, and personal style. We&rsquo;ll
+              assemble a capsule wardrobe blueprint packed with outfit ideas, styling prompts, and trending
+              pieces to shop now.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                alt="Flat lay of capsule wardrobe pieces"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container builder-layout">
+          <form class="builder-form" id="capsule-form">
+            <div class="section-heading tight">
+              <span class="eyebrow">Tell us about you</span>
+              <h2>Customize your blueprint</h2>
+            </div>
+            <div class="form-grid">
+              <label>
+                <span>Gender</span>
+                <select name="gender" required>
+                  <option value="Woman">Woman</option>
+                  <option value="Man">Man</option>
+                  <option value="Non-binary">Non-binary</option>
+                  <option value="Gender expansive">Gender expansive</option>
+                </select>
+              </label>
+              <label>
+                <span>Body type</span>
+                <select name="body" required>
+                  <option value="Hourglass">Hourglass</option>
+                  <option value="Rectangle">Rectangle</option>
+                  <option value="Pear">Pear</option>
+                  <option value="Apple">Apple</option>
+                  <option value="Inverted Triangle">Inverted Triangle</option>
+                </select>
+              </label>
+              <label>
+                <span>Seasonal colour palette</span>
+                <select name="palette" required>
+                  <option value="Bright Spring">Bright Spring</option>
+                  <option value="True Spring">True Spring</option>
+                  <option value="Light Spring">Light Spring</option>
+                  <option value="Bright Winter">Bright Winter</option>
+                  <option value="True Winter">True Winter</option>
+                  <option value="Dark Winter">Dark Winter</option>
+                  <option value="Light Summer">Light Summer</option>
+                  <option value="True Summer">True Summer</option>
+                  <option value="Soft Summer">Soft Summer</option>
+                  <option value="Soft Autumn">Soft Autumn</option>
+                  <option value="True Autumn">True Autumn</option>
+                  <option value="Dark Autumn">Dark Autumn</option>
+                </select>
+              </label>
+              <label>
+                <span>Personal style</span>
+                <select name="style" required>
+                  <option value="Classic">Classic</option>
+                  <option value="Edgy">Edgy</option>
+                  <option value="Romantic">Romantic</option>
+                  <option value="Minimalist">Minimalist</option>
+                  <option value="Bohemian">Bohemian</option>
+                  <option value="Modernist">Modernist</option>
+                </select>
+              </label>
+            </div>
+            <button class="btn primary" type="submit">Generate wardrobe blueprint</button>
+          </form>
+
+          <aside class="builder-output" id="results" aria-live="polite">
+            <div class="placeholder">
+              <h2>Your capsule results will appear here</h2>
+              <p>
+                Use the form to generate personalized essentials, outfit combos, styling cues, and a few
+                trend-driven pieces to keep your closet feeling current.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Need inspo?</span>
+            <h2>Peek inside our favourite capsules</h2>
+          </div>
+          <div class="mini-grid">
+            <article class="mini-card">
+              <img src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?auto=format&fit=crop&w=600&q=80" alt="Neutral capsule" />
+              <h3>Desk-to-dinner Classic</h3>
+              <p>Six versatile pieces that transition seamlessly from office hours to late-night plans.</p>
+              <a class="text-link" href="lookbooks.html#classic">View looks</a>
+            </article>
+            <article class="mini-card">
+              <img src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?auto=format&fit=crop&w=600&q=80" alt="Edgy capsule" />
+              <h3>Edgy night out</h3>
+              <p>All-black foundation with pops of silver hardware and coated denim.</p>
+              <a class="text-link" href="lookbooks.html#edgy">See lookbook</a>
+            </article>
+            <article class="mini-card">
+              <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" alt="Romantic capsule" />
+              <h3>Romantic getaway</h3>
+              <p>Airy dresses, lace details, and blush-toned layers ideal for weekend escapes.</p>
+              <a class="text-link" href="lookbooks.html#romantic">Explore outfits</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <p>Made for modern closets. Built with love in a tiny but mighty atelier.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="blogs.html">Studio journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Join the weekly memo for fresh outfit math &amp; shopping lists.</p>
+          <form class="inline-form">
+            <label class="sr-only" for="email-builder">Email</label>
+            <input id="email-builder" type="email" placeholder="you@example.com" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> Capsule Wardrobe Studio. All rights reserved.</p>
+    </footer>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/builder.js"></script>
+  </body>
+</html>

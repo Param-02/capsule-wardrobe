@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Capsule Wardrobe Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="contact page" data-page="contact">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="branding" href="index.html">
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <span class="tagline">Curated essentials for every day confidence</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <ul id="primary-nav">
+            <li><a href="builder.html">Build</a></li>
+            <li><a href="lookbooks.html">Lookbooks</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero sub">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Let&rsquo;s connect</span>
+            <h1>Contact Capsule Wardrobe Studio</h1>
+            <p>
+              Ready for a bespoke capsule or want to collaborate? Drop us a note. We respond within two business
+              days and can chat via email, video call, or a quick DM.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80"
+                alt="Workspace with notebook"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-card">
+            <h2>Studio details</h2>
+            <p>We&rsquo;re based in Toronto and work with clients worldwide.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> hello@capsulestudio.co</li>
+              <li><strong>Phone:</strong> +1 (416) 555-0129</li>
+              <li><strong>Consult hours:</strong> Tue &ndash; Thu, 10 AM &ndash; 6 PM EST</li>
+              <li><strong>Press:</strong> press@capsulestudio.co</li>
+            </ul>
+            <p class="tip">You can update these details anytime. They&rsquo;re simply placeholders for now.</p>
+          </div>
+          <form class="contact-form">
+            <h2>Tell us about your project</h2>
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Service</span>
+              <select required>
+                <option>Personal capsule planning</option>
+                <option>Corporate workshop</option>
+                <option>Editorial styling</option>
+                <option>Collaboration</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea rows="5" placeholder="Share your style goals"></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <p>Made for modern closets. Built with love in a tiny but mighty atelier.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="builder.html">Wardrobe builder</a></li>
+            <li><a href="lookbooks.html">Lookbooks</a></li>
+            <li><a href="guides.html">Guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Join the weekly memo for fresh outfit math &amp; shopping lists.</p>
+          <form class="inline-form">
+            <label class="sr-only" for="email-contact">Email</label>
+            <input id="email-contact" type="email" placeholder="you@example.com" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> Capsule Wardrobe Studio. All rights reserved.</p>
+    </footer>
+    <script src="scripts/global.js"></script>
+  </body>
+</html>
