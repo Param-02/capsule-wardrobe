@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lookbooks | Capsule Wardrobe Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="branding" href="index.html">
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <span class="tagline">Curated essentials for every day confidence</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <ul id="primary-nav">
+            <li><a href="builder.html">Build</a></li>
+            <li class="active"><a href="lookbooks.html">Lookbooks</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero sub">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Curated outfits</span>
+            <h1>Lookbooks for every style personality</h1>
+            <p>
+              Explore head-to-toe outfit formulas designed for different aesthetics. Each edit pairs
+              wardrobe essentials with seasonal updates so you can save, shop, or recreate the look using
+              your existing pieces.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80"
+                alt="Styled outfits on clothing rack"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Choose your mood</span>
+            <h2>Lookbooks</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Style categories">
+            <button class="tab active" data-target="classic" role="tab" aria-selected="true">Classic</button>
+            <button class="tab" data-target="edgy" role="tab" aria-selected="false">Edgy</button>
+            <button class="tab" data-target="romantic" role="tab" aria-selected="false">Romantic</button>
+            <button class="tab" data-target="minimalist" role="tab" aria-selected="false">Minimalist</button>
+            <button class="tab" data-target="bohemian" role="tab" aria-selected="false">Bohemian</button>
+            <button class="tab" data-target="modernist" role="tab" aria-selected="false">Modernist</button>
+          </div>
+          <div class="lookbook-deck">
+            <div class="lookbook-panel active" id="classic" role="tabpanel">
+              <div class="lookbook-grid">
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=600&q=80" alt="Classic blazer outfit" />
+                  <div>
+                    <h3>Boardroom polish</h3>
+                    <p>Structured blazer, silk blouse, tailored trousers, and pointed pumps.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1518032929512-1d5ae942a0ee?auto=format&fit=crop&w=600&q=80" alt="Classic weekend outfit" />
+                  <div>
+                    <h3>Weekend smart</h3>
+                    <p>Camel trench, Breton stripe tee, ankle-crop denim, and loafers.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Classic evening outfit" />
+                  <div>
+                    <h3>Evening elegance</h3>
+                    <p>Black sheath dress, draped wool coat, crystal studs, and satin clutch.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="lookbook-panel" id="edgy" role="tabpanel">
+              <div class="lookbook-grid">
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="Edgy streetwear" />
+                  <div>
+                    <h3>Night shift</h3>
+                    <p>Leather moto jacket, mesh top, coated denim, and heeled boots.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Edgy layering" />
+                  <div>
+                    <h3>Layered contrast</h3>
+                    <p>Oversized blazer, cropped hoodie, pleated skirt, and chunky sneakers.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80" alt="Edgy casual" />
+                  <div>
+                    <h3>Weekend rebel</h3>
+                    <p>Denim shacket, band tee, leather leggings, and platform combat boots.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="lookbook-panel" id="romantic" role="tabpanel">
+              <div class="lookbook-grid">
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Romantic dress" />
+                  <div>
+                    <h3>Garden brunch</h3>
+                    <p>Floral midi dress, soft cardigan, pearl earrings, and nude block heels.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Romantic evening" />
+                  <div>
+                    <h3>Moonlit dinner</h3>
+                    <p>Slip dress, lace topper, jeweled clutch, and strappy sandals.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Romantic travel" />
+                  <div>
+                    <h3>Weekend away</h3>
+                    <p>Wrap blouse, wide-leg trousers, satin scarf, and espadrille wedges.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="lookbook-panel" id="minimalist" role="tabpanel">
+              <div class="lookbook-grid">
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="Minimalist suit" />
+                  <div>
+                    <h3>Gallery day</h3>
+                    <p>Oatmeal coat, column dress, sculptural tote, and low mules.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=600&q=80" alt="Minimalist lounge" />
+                  <div>
+                    <h3>Weekend soft</h3>
+                    <p>Boxy tee, wide-leg knit pants, tonal sneakers, and crossbody.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Minimalist work" />
+                  <div>
+                    <h3>Studio session</h3>
+                    <p>Relaxed blazer, pleated culottes, ribbed tank, and sculptural flats.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="lookbook-panel" id="bohemian" role="tabpanel">
+              <div class="lookbook-grid">
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Bohemian maxi dress" />
+                  <div>
+                    <h3>Festival flow</h3>
+                    <p>Printed maxi dress, crochet cardigan, tassel earrings, and suede booties.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" alt="Bohemian layers" />
+                  <div>
+                    <h3>Market morning</h3>
+                    <p>Wide-leg denim, embroidered blouse, layered necklaces, and slides.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Bohemian travel" />
+                  <div>
+                    <h3>Sunset stroll</h3>
+                    <p>Kimono wrap, silk camisole, palazzo pants, and stacked bracelets.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="lookbook-panel" id="modernist" role="tabpanel">
+              <div class="lookbook-grid">
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Modernist work" />
+                  <div>
+                    <h3>Architectural office</h3>
+                    <p>Structured jumpsuit, mock-neck top, sleek backpack, and square-toe boots.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Modernist outing" />
+                  <div>
+                    <h3>Art walk</h3>
+                    <p>Asymmetric blouse, tailored shorts, belt bag, and hybrid sneakers.</p>
+                  </div>
+                </article>
+                <article class="lookbook-card">
+                  <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" alt="Modernist evening" />
+                  <div>
+                    <h3>Evening gallery</h3>
+                    <p>Liquid metal skirt, sculptural knit, geometric earrings, and low mules.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <p>Made for modern closets. Built with love in a tiny but mighty atelier.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="builder.html">Wardrobe builder</a></li>
+            <li><a href="analysis.html">Find your palette</a></li>
+            <li><a href="blogs.html">Studio journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Join the weekly memo for fresh outfit math &amp; shopping lists.</p>
+          <form class="inline-form">
+            <label class="sr-only" for="email-lookbooks">Email</label>
+            <input id="email-lookbooks" type="email" placeholder="you@example.com" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> Capsule Wardrobe Studio. All rights reserved.</p>
+    </footer>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/lookbooks.js"></script>
+  </body>
+</html>
