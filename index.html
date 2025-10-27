@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capsule Wardrobe Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home page" data-page="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="branding" href="index.html">
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <span class="tagline">Curated essentials for every day confidence</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <ul id="primary-nav">
+            <li><a href="builder.html">Build</a></li>
+            <li><a href="lookbooks.html">Lookbooks</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Start fresh</span>
+            <h1>Build a capsule wardrobe that fits your life, not the other way around.</h1>
+            <p>
+              Discover outfits you&rsquo;ll actually wear, explore curated lookbooks for every personal
+              aesthetic, and learn how to shop and style with intent. Capsule Wardrobe Studio is your
+              modern guide to feeling polished with a smaller closet.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="builder.html">Launch the wardrobe builder</a>
+              <a class="btn ghost" href="lookbooks.html">Preview lookbooks</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <figure class="hero-photo">
+              <img
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1100&q=80"
+                alt="Personal stylist reviewing capsule pieces with a client"
+              />
+            </figure>
+            <div class="hero-note">
+              <span class="hero-note-label">Inside the studio</span>
+              <p>
+                Every blueprint is hand-checked by a stylist so your closet balances joy, versatility, and
+                the lifestyle you actually live.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section narrative">
+        <div class="container narrative-grid">
+          <div class="narrative-lede">
+            <span class="eyebrow">Capsule philosophy</span>
+            <h2>Curate less, love more</h2>
+            <p>
+              A capsule wardrobe is a focused collection of mix-and-match essentials that deliver endless
+              outfit options. We combine data-backed styling with personal insight so every piece feels like
+              it was made for you.
+            </p>
+          </div>
+          <div class="narrative-details">
+            <article class="narrative-card">
+              <h3>What is a capsule?</h3>
+              <p>
+                A seasonal lineup of tops, bottoms, layers, shoes, and accessories chosen for cohesion and
+                longevity. Think polished foundations that make getting dressed instinctive.
+              </p>
+            </article>
+            <article class="narrative-card">
+              <h3>Why choose us</h3>
+              <p>
+                Our stylists map your body architecture, color story, and lifestyle cadence to recommend
+                intentional purchases&mdash;no more guesswork or impulse buys.
+              </p>
+            </article>
+            <article class="narrative-card">
+              <h3>How it works</h3>
+              <p>
+                Start in the builder, dive into lookbooks for outfit math, and use our guides and analysis
+                tools to evolve your style with confidence season after season.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section spotlight">
+        <div class="container">
+          <div class="spotlight-shell">
+            <div class="spotlight-grid">
+              <div class="spotlight-intro">
+                <span class="eyebrow">Capsule spotlights</span>
+                <h2>Preview a capsule in seconds</h2>
+                <p>
+                  Tap through the styles our clients request most to see the hero items, signature outfit,
+                  and go-to lookbook for each aesthetic.
+                </p>
+                <div class="spotlight-tabs" role="group" aria-label="Capsule style selector">
+                  <button type="button" class="spotlight-tab active" data-style-tab="Classic" aria-pressed="true">
+                    Classic polish
+                  </button>
+                  <button type="button" class="spotlight-tab" data-style-tab="Edgy" aria-pressed="false">
+                    Edgy street
+                  </button>
+                  <button type="button" class="spotlight-tab" data-style-tab="Romantic" aria-pressed="false">
+                    Romantic muse
+                  </button>
+                  <button type="button" class="spotlight-tab" data-style-tab="Minimalist" aria-pressed="false">
+                    Minimal luxury
+                  </button>
+                </div>
+              </div>
+              <div class="spotlight-display spotlight-stage" aria-live="polite">
+                <div class="spotlight-visual">
+                  <div class="spotlight-orb" aria-hidden="true"></div>
+                  <img
+                    data-style-image
+                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80"
+                    alt="Classic capsule outfit"
+                  />
+                </div>
+                <div class="spotlight-meta">
+                  <p class="spotlight-tag" data-style-tagline>Boardroom to brunch</p>
+                  <h3 data-style-title>Classic capsule formula</h3>
+                  <p data-style-description>
+                    Structured tailoring, soft silk layers, and a hint of shine keep this capsule endlessly
+                    versatile.
+                  </p>
+                  <ul class="pill-list" data-style-list>
+                    <li>Tailored blazer</li>
+                    <li>Silk blouse</li>
+                    <li>Cigarette trousers</li>
+                    <li>Block-heel pumps</li>
+                  </ul>
+                  <a class="btn secondary" href="lookbooks.html#classic" data-style-link>Open the classic lookbook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-heading with-action">
+            <div>
+              <span class="eyebrow">Latest insight</span>
+              <h2>Trending capsules from the studio</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Carousel controls">
+              <button class="carousel-nav" type="button" data-carousel-control="prev" aria-label="Previous capsule">
+                &#8592;
+              </button>
+              <button class="carousel-nav" type="button" data-carousel-control="next" aria-label="Next capsule">
+                &#8594;
+              </button>
+            </div>
+          </div>
+          <div class="carousel" data-carousel-track>
+            <article class="carousel-card is-active">
+              <figure class="carousel-media">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Classic capsule pieces" />
+              </figure>
+              <div class="carousel-body">
+                <span class="carousel-tag">Classic polish</span>
+                <h3>Power minimalism</h3>
+                <p>Sharp tailoring, tonal layers, and premium accessories for weekday polish.</p>
+                <a class="text-link" href="lookbooks.html#classic">View classic lookbook</a>
+              </div>
+            </article>
+            <article class="carousel-card">
+              <figure class="carousel-media">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Romantic outfit" />
+              </figure>
+              <div class="carousel-body">
+                <span class="carousel-tag">Romantic muse</span>
+                <h3>Romantic retreat</h3>
+                <p>Soft draping, floral accents, and delicate textures ready for weekend escapes.</p>
+                <a class="text-link" href="lookbooks.html#romantic">See romantic edits</a>
+              </div>
+            </article>
+            <article class="carousel-card">
+              <figure class="carousel-media">
+                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=900&q=80" alt="Edgy streetwear" />
+              </figure>
+              <div class="carousel-body">
+                <span class="carousel-tag">Night-out energy</span>
+                <h3>Urban edge</h3>
+                <p>Statement leather, bold contrast, and utilitarian details for after-dark adventures.</p>
+                <a class="text-link" href="lookbooks.html#edgy">Explore edgy capsule</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <span class="logo">Capsule Wardrobe Studio</span>
+          <p>Made for modern closets. Built with love in a tiny but mighty atelier.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="builder.html">Build your capsule</a></li>
+            <li><a href="lookbooks.html">Lookbooks</a></li>
+            <li><a href="blogs.html">Studio journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Join the weekly memo for fresh outfit math &amp; shopping lists.</p>
+          <form class="inline-form">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> Capsule Wardrobe Studio. All rights reserved.</p>
+    </footer>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/home.js"></script>
+  </body>
+</html>
