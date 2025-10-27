@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capsule Wardrobe Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="branding">
+          <span class="logo">Capsule Wardrobe Architect</span>
+          <p class="tagline">Curate with purpose, dress with confidence.</p>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#builder">Build</a></li>
+            <li><a href="#lookbooks">Lookbooks</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-content">
+          <div>
+            <h1>Design your capsule wardrobe with architectural precision</h1>
+            <p>
+              Inspired by information architecture, Capsule Wardrobe Architect helps
+              you structure every garment, color story, and accessory so your style
+              feels intentional and effortless.
+            </p>
+            <div class="feature-grid">
+              <a class="feature-card" href="#builder">
+                <h3>Build your capsule wardrobe</h3>
+                <p>Personalized recommendations tailored to your body type and style aesthetics.</p>
+              </a>
+              <a class="feature-card" href="#lookbooks">
+                <h3>Lookbooks</h3>
+                <p>Curated outfits for each style archetype to spark endless inspiration.</p>
+              </a>
+              <a class="feature-card" href="#analysis">
+                <h3>Analysis</h3>
+                <p>Learn how to identify your body type, color palette, and signature vibe.</p>
+              </a>
+              <a class="feature-card" href="#guides">
+                <h3>Guides</h3>
+                <p>Deep dives into theory, visuals, and styling tips for every aesthetic.</p>
+              </a>
+              <a class="feature-card" href="#blogs">
+                <h3>Blogs</h3>
+                <p>History, trends, and thoughtful essays on minimalist fashion culture.</p>
+              </a>
+              <a class="feature-card" href="#contact">
+                <h3>Contact us</h3>
+                <p>Reach out for personalized consultations or collaboration inquiries.</p>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1521579971123-1192931a1452?auto=format&fit=crop&w=800&q=80" alt="Curated wardrobe" />
+          </div>
+        </div>
+      </section>
+
+      <section id="builder" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Interactive tool</span>
+            <h2>Build your capsule wardrobe</h2>
+            <p>
+              Choose the foundational elements that describe you. We will map your
+              selections to curated clothing, accessories, and styling insights.
+            </p>
+          </div>
+          <form class="builder-form">
+            <div class="form-grid">
+              <label>
+                <span>Gender</span>
+                <select>
+                  <option>Woman</option>
+                  <option>Man</option>
+                  <option>Non-binary</option>
+                  <option>Gender expansive</option>
+                </select>
+              </label>
+              <label>
+                <span>Body type</span>
+                <select>
+                  <option>Hourglass</option>
+                  <option>Rectangle</option>
+                  <option>Pear</option>
+                  <option>Apple</option>
+                  <option>Inverted Triangle</option>
+                </select>
+              </label>
+              <label>
+                <span>Seasonal colour palette</span>
+                <select>
+                  <option>Bright Spring</option>
+                  <option>True Spring</option>
+                  <option>Light Spring</option>
+                  <option>Bright Winter</option>
+                  <option>True Winter</option>
+                  <option>Dark Winter</option>
+                  <option>Light Summer</option>
+                  <option>True Summer</option>
+                  <option>Soft Summer</option>
+                  <option>Soft Autumn</option>
+                  <option>True Autumn</option>
+                  <option>Dark Autumn</option>
+                </select>
+              </label>
+              <label>
+                <span>Personal style</span>
+                <select>
+                  <option>Classic</option>
+                  <option>Edgy</option>
+                  <option>Romantic</option>
+                  <option>Minimalist</option>
+                  <option>Bohemian</option>
+                  <option>Modernist</option>
+                </select>
+              </label>
+            </div>
+            <button type="button">Generate wardrobe blueprint</button>
+          </form>
+
+          <div class="builder-output">
+            <div class="output-panel">
+              <h3>Core wardrobe essentials</h3>
+              <ul class="pill-list">
+                <li>Tailored blazer</li>
+                <li>Silk blouse</li>
+                <li>High-waist trousers</li>
+                <li>Structured midi dress</li>
+                <li>Vintage denim</li>
+                <li>Neutral knitwear</li>
+              </ul>
+              <div class="output-grid">
+                <article>
+                  <h4>Clothing</h4>
+                  <p>
+                    Pair a monochrome column with a contrasting blazer to echo your colour palette.
+                    Layer textures—think cashmere with vegan leather—to balance structure and softness.
+                  </p>
+                </article>
+                <article>
+                  <h4>Accessories</h4>
+                  <p>
+                    Choose jewelry metals that complement your undertone and use belts or scarves to
+                    define shape and movement throughout each look.
+                  </p>
+                </article>
+                <article>
+                  <h4>Footwear</h4>
+                  <p>
+                    Maintain two heel heights and one statement boot to easily transition between
+                    daytime functionality and evening polish.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="output-panel">
+              <h3>Styling tips & lookbooks</h3>
+              <p>
+                Explore complete outfits curated from head to toe. Each lookbook demonstrates how
+                to mix silhouettes, color stories, and accessories to remain true to your selected style.
+              </p>
+              <div class="lookbook-carousel">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1503342452485-86b7f54527dd?auto=format&fit=crop&w=600&q=80" alt="Classic look" />
+                  <figcaption>Classic Serenity — crisp shirt, pleated trousers, almond pumps.</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1511288598185-2c67e03f054c?auto=format&fit=crop&w=600&q=80" alt="Edgy look" />
+                  <figcaption>Edgy Contrast — leather moto, satin slip, block-heel boots.</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=80" alt="Romantic look" />
+                  <figcaption>Romantic Bloom — draped blouse, lace skirt, strappy heels.</figcaption>
+                </figure>
+              </div>
+              <div class="trendy-picks">
+                <h4>Trending accents</h4>
+                <ul>
+                  <li>Molten metal earrings that echo seasonal glow.</li>
+                  <li>Convertible top-handle bag in your secondary hue.</li>
+                  <li>Statement loafer with platform sole.</li>
+                  <li>Modular outerwear with removable lining.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lookbooks" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Inspiration library</span>
+            <h2>Lookbooks by style identity</h2>
+            <p>
+              Each lookbook is a choreographed narrative: begin with foundational layers,
+              accent with accessories, and finish with movement through footwear.
+            </p>
+          </div>
+          <div class="lookbook-grid">
+            <article>
+              <h3>Classic</h3>
+              <p>
+                Immaculate tailoring, neutral palettes, and polished accessories create a timeless capsule.
+              </p>
+              <ul>
+                <li>Double-breasted blazer over silk shell</li>
+                <li>Monochrome column with tonal belt</li>
+                <li>Structured tote and pearl drop earrings</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Edgy</h3>
+              <p>
+                Architectural silhouettes, leather textures, and chrome details celebrate bold expression.
+              </p>
+              <ul>
+                <li>Cropped moto jacket with asymmetric hem</li>
+                <li>Layered mesh top beneath satin slip dress</li>
+                <li>Chunky boots and stackable rings</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Romantic</h3>
+              <p>
+                Soft drape, botanical prints, and fluid fabrics bring a poetic mood to every outfit.
+              </p>
+              <ul>
+                <li>Ruffled wrap dress with ribbon belt</li>
+                <li>Pointelle knit cardigan for layering</li>
+                <li>Mary Jane heels with rose-gold accents</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Minimalist</h3>
+              <p>
+                Clean lines and tonal layering deliver ease and versatility in every scenario.
+              </p>
+              <ul>
+                <li>Column dress with tailored waistcoat</li>
+                <li>Wide-leg trouser with crop cashmere</li>
+                <li>Soft-structure bucket bag</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Bohemian</h3>
+              <p>
+                Natural fibers, artisanal prints, and relaxed layers invite storytelling through dress.
+              </p>
+              <ul>
+                <li>Handwoven kimono over silk cami</li>
+                <li>Flared denim with embroidered details</li>
+                <li>Layered pendant necklaces and suede clogs</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Modernist</h3>
+              <p>
+                Geometric color blocking and sculptural accessories lean into futurist sophistication.
+              </p>
+              <ul>
+                <li>Structural coat with modular panels</li>
+                <li>Minimal jumpsuit with harness belt</li>
+                <li>Graphic mules and acrylic cuffs</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="analysis" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Self-knowledge toolkit</span>
+            <h2>Analysis frameworks</h2>
+            <p>
+              Identify the ontology, taxonomy, and choreography of your personal style through body,
+              color, and aesthetic analysis.
+            </p>
+          </div>
+          <div class="analysis-grid">
+            <article>
+              <h3>Body type</h3>
+              <p>
+                Observe shoulder-to-hip balance, waist definition, and vertical proportions. Photograph
+                yourself in fitted clothing, draw simple outlines, and compare to silhouettes for hourglass,
+                rectangle, pear, apple, and inverted triangle. Note where you naturally carry volume—this
+                informs your garment structure and fabric weight.
+              </p>
+            </article>
+            <article>
+              <h3>Colour analysis</h3>
+              <p>
+                Evaluate skin tone, undertone, and hair depth beneath natural light. Use white drapes to
+                reveal warm (golden, peach) or cool (rosy, bluish) undertones. Test contrasting swatches to
+                find whether high saturation or soft diffusion best complements you. Map findings to the 12
+                seasonal palettes and anchor your wardrobe around your dominant chroma, value, and temperature.
+              </p>
+            </article>
+            <article>
+              <h3>Personal style</h3>
+              <p>
+                Catalogue your favorite outfits and rate them by comfort, confidence, and compliment frequency.
+                Track repeated motifs—structures, colors, patterns—and align them with archetypes like Classic,
+                Edgy, Romantic, Minimalist, Bohemian, and Modernist. This analysis becomes your style taxonomy.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Deep dives</span>
+            <h2>Guides & visual frameworks</h2>
+            <p>
+              Translate analysis into action through illustrated primers, theoretical context, and practical styling tips.
+            </p>
+          </div>
+          <div class="guide-grid">
+            <article>
+              <h3>Body type analysis</h3>
+              <p>
+                Explore front, side, and 3/4 diagrams that highlight balance points and ideal hem placements. Learn how
+                structured seams, darts, and tailoring reinforce proportional harmony.
+              </p>
+              <ul>
+                <li>Visual overlays for each silhouette</li>
+                <li>Neckline and sleeve guidance</li>
+                <li>Fabric drape recommendations</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Seasonal colour palette</h3>
+              <p>
+                Discover wheel-based charts that show hue families, contrast levels, and accent shades for each of the
+                12 palettes. Understand how neutrals, metallics, and make-up align with your season.
+              </p>
+              <ul>
+                <li>Palette grids with dominant, balancing, and highlight tones</li>
+                <li>Wardrobe capsule color ratios</li>
+                <li>Accessory and beauty harmonies</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Style aesthetics</h3>
+              <p>
+                Define the DNA of Classic, Edgy, Romantic, Minimalist, Bohemian, and Modernist aesthetics through mood
+                boards and signature elements. Learn which fabrics, silhouettes, and pattern scales convey each mood.
+              </p>
+              <ul>
+                <li>Key descriptors and icon garments</li>
+                <li>Texture and print guidelines</li>
+                <li>Stylistic do's & experiments</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Styling tips</h3>
+              <p>
+                Layering formulas, proportion rules, and outfit choreography tailored to each aesthetic ensure you can
+                remix your capsule with ease, season after season.
+              </p>
+              <ul>
+                <li>Rule of thirds & column dressing examples</li>
+                <li>Accessory modulation for work to weekend</li>
+                <li>Visual rhythm through color blocking</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blogs" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Thought leadership</span>
+            <h2>Capsule wardrobe journal</h2>
+            <p>
+              Deep analyses, historical narratives, and contemporary reflections that celebrate intentional fashion.
+            </p>
+          </div>
+          <div class="blog-grid">
+            <article>
+              <h3>The architecture of minimalist fashion</h3>
+              <p>
+                Trace the lineage from Bauhaus design principles to modern capsule wardrobes. Understand how clarity of
+                structure, modular components, and functional beauty create sustainable closets.
+              </p>
+              <div class="blog-details">
+                <h4>Highlights</h4>
+                <ul>
+                  <li>Case studies featuring early capsule pioneers like Susie Faux.</li>
+                  <li>Comparative analysis between mid-century uniforms and today's workleisure staples.</li>
+                  <li>Guidelines for editing your closet using ontological, taxonomical, and choreographic methods.</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <h3>Color stories: science meets style</h3>
+              <p>
+                Dive into the physics of light, pigments, and perception to understand why certain palettes enhance our
+                presence. Learn from artists, color theorists, and stylists who pioneered seasonal analysis.
+              </p>
+              <div class="blog-details">
+                <h4>Sections</h4>
+                <ul>
+                  <li>History of color draping in early Hollywood costume departments.</li>
+                  <li>Modern data-backed insights from spectrophotometry and digital wardrobes.</li>
+                  <li>Practical experiments you can try at home with daylight mirrors.</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <h3>Wardrobe ethnography</h3>
+              <p>
+                Explore cultural anecdotes and global perspectives on capsule living. From Japanese ma wardrobes to
+                Scandinavian lagom philosophies, discover how minimalism adapts across contexts.
+              </p>
+              <div class="blog-details">
+                <h4>In this issue</h4>
+                <ul>
+                  <li>Interviews with designers embracing slow fashion supply chains.</li>
+                  <li>Historical artifacts documenting travel capsules of explorers.</li>
+                  <li>Trend forecast: elevated utilitarianism and modular accessories.</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <h3>Field notes: contemporary trends</h3>
+              <p>
+                Monthly analysis of runway, street style, and retail data. See how capsule methodology informs the latest
+                silhouettes, color stories, and accessory ecosystems.
+              </p>
+              <div class="blog-details">
+                <h4>Data points</h4>
+                <ul>
+                  <li>Charted rise of convertible garments and reversible fabrics.</li>
+                  <li>Consumer interviews on investment dressing and cost-per-wear.</li>
+                  <li>Editorial mood boards pairing trending pieces with wardrobe staples.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Connect</span>
+            <h2>Contact us</h2>
+            <p>
+              Ready to architect your capsule? Reach out to schedule a consultation or partnership inquiry.
+            </p>
+          </div>
+          <div class="contact-card">
+            <div>
+              <h3>Studio</h3>
+              <p>
+                123 Capsule Way<br />
+                Wardrobe City, ST 45678
+              </p>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <p>
+                <a href="tel:+1234567890">+1 (234) 567-890</a><br />
+                <a href="mailto:hello@capsulearchitect.com">hello@capsulearchitect.com</a>
+              </p>
+            </div>
+            <div>
+              <h3>Office hours</h3>
+              <p>Monday – Friday, 9am – 5pm</p>
+            </div>
+            <div>
+              <h3>Follow</h3>
+              <p>
+                <a href="#">Instagram</a> · <a href="#">Pinterest</a> · <a href="#">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Capsule Wardrobe Architect. Built with empathy, analytics, and feedback.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
