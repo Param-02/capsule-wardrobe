@@ -54,6 +54,7 @@
               <img
                 src="https://images.unsplash.com/photo-1518544924301-2e95d20f90fc?auto=format&fit=crop&w=1100&q=80"
                 alt="Capsule wardrobe outfits arranged on a rail with styling table"
+                referrerpolicy="no-referrer"
               />
             </figure>
           </div>
@@ -78,10 +79,6 @@
                 <span class="studio-highlight-title">Balanced investments</span>
                 <p>Mix hero pieces with budget-friendly finds to keep your wardrobe smart and wearable.</p>
               </li>
-              <li>
-                <span class="studio-highlight-title">Seasonal refresh roadmap</span>
-                <p>Receive shoppable edits every quarter so your capsule evolves without overwhelm.</p>
-              </li>
             </ul>
           </div>
           <div class="studio-panels">
@@ -97,6 +94,13 @@
               <p>
                 Upload current favourites and we&rsquo;ll blend them into the capsule to minimise purchases and
                 amplify what you already own.
+              </p>
+            </article>
+            <article class="studio-card">
+              <h3>Seasonal refresh roadmap</h3>
+              <p>
+                Receive shoppable edits every quarter so your capsule evolves without overwhelm and stays
+                true to your lifestyle.
               </p>
             </article>
           </div>
@@ -142,59 +146,52 @@
 
       <section class="section spotlight">
         <div class="container">
-          <div class="spotlight-shell">
-            <div class="spotlight-grid">
-              <div class="spotlight-intro">
-                <span class="eyebrow">Capsule spotlights</span>
-                <h2>Preview a capsule in seconds</h2>
-                <p>
-                  Tap through the styles our clients request most to see the hero items, signature outfit,
-                  and go-to lookbook for each aesthetic.
-                </p>
-                <div class="spotlight-tabs" role="group" aria-label="Capsule style selector">
-                  <button type="button" class="spotlight-tab active" data-style-tab="Classic" aria-pressed="true">
-                    Classic polish
-                  </button>
-                  <button type="button" class="spotlight-tab" data-style-tab="Edgy" aria-pressed="false">
-                    Edgy street
-                  </button>
-                  <button type="button" class="spotlight-tab" data-style-tab="Romantic" aria-pressed="false">
-                    Romantic muse
-                  </button>
-                  <button type="button" class="spotlight-tab" data-style-tab="Minimalist" aria-pressed="false">
-                    Minimal luxury
-                  </button>
-                </div>
-              </div>
-              <div class="spotlight-display spotlight-stage" aria-live="polite">
-                <div class="spotlight-visual">
-                  <div class="spotlight-blur" aria-hidden="true"></div>
-                  <div class="spotlight-frame">
-                    <img
-                      data-style-image
-                      src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80"
-                      alt="Classic capsule outfit"
-                    />
-                  </div>
-                  <div class="spotlight-chip" data-style-chip>Signature set</div>
-                </div>
-                <div class="spotlight-meta">
-                  <p class="spotlight-tag" data-style-tagline>Boardroom to brunch</p>
-                  <h3 data-style-title>Classic capsule formula</h3>
-                  <p data-style-description>
-                    Structured tailoring, soft silk layers, and a hint of shine keep this capsule endlessly
-                    versatile.
-                  </p>
-                  <ul class="pill-list" data-style-list>
-                    <li>Tailored blazer</li>
-                    <li>Silk blouse</li>
-                    <li>Cigarette trousers</li>
-                    <li>Block-heel pumps</li>
-                  </ul>
-                  <a class="btn secondary" href="lookbooks.html#classic" data-style-link>Open the classic lookbook</a>
-                </div>
-              </div>
+          <div class="section-heading tight">
+            <span class="eyebrow">Capsule spotlights</span>
+            <h2>Preview a capsule in seconds</h2>
+            <p>
+              Tap through the styles our clients request most to see the hero items, signature outfit, and
+              go-to lookbook for each aesthetic.
+            </p>
+          </div>
+          <div class="spotlight-layout">
+            <div class="spotlight-nav" role="tablist" aria-label="Capsule style selector">
+              <button type="button" class="spotlight-tab active" data-style-tab="Classic" aria-pressed="true">
+                Classic polish
+              </button>
+              <button type="button" class="spotlight-tab" data-style-tab="Edgy" aria-pressed="false">
+                Edgy street
+              </button>
+              <button type="button" class="spotlight-tab" data-style-tab="Romantic" aria-pressed="false">
+                Romantic muse
+              </button>
+              <button type="button" class="spotlight-tab" data-style-tab="Minimalist" aria-pressed="false">
+                Minimal luxury
+              </button>
             </div>
+            <article class="spotlight-card" aria-live="polite">
+              <div class="spotlight-media">
+                <img
+                  data-style-image
+                  src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80"
+                  alt="Classic capsule outfit"
+                />
+              </div>
+              <div class="spotlight-info">
+                <p class="spotlight-tag" data-style-tagline>Boardroom to brunch</p>
+                <h3 data-style-title>Classic capsule formula</h3>
+                <p data-style-description>
+                  Structured tailoring, soft silk layers, and a hint of shine keep this capsule endlessly versatile.
+                </p>
+                <ul class="pill-list" data-style-list>
+                  <li>Tailored blazer</li>
+                  <li>Silk blouse</li>
+                  <li>Cigarette trousers</li>
+                  <li>Block-heel pumps</li>
+                </ul>
+                <a class="btn secondary" href="lookbooks.html#classic" data-style-link>Open the classic lookbook</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>

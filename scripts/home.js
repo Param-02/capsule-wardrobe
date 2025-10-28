@@ -2,7 +2,6 @@ const styleSpotlights = {
   Classic: {
     title: 'Classic capsule formula',
     tagline: 'Boardroom to brunch',
-    chip: 'Tailored edit',
     description:
       'Structured tailoring, soft silk layers, and a hint of shine keep this capsule endlessly versatile.',
     items: ['Tailored blazer', 'Silk blouse', 'Cigarette trousers', 'Block-heel pumps'],
@@ -14,7 +13,6 @@ const styleSpotlights = {
   Edgy: {
     title: 'Edgy capsule formula',
     tagline: 'After-dark attitude',
-    chip: 'Statement icons',
     description:
       'High-shine leather, graphic layers, and hardware accents add instant drama to everyday basics.',
     items: ['Moto jacket', 'Mesh layering top', 'Coated denim', 'Platform boots'],
@@ -26,7 +24,6 @@ const styleSpotlights = {
   Romantic: {
     title: 'Romantic capsule formula',
     tagline: 'Soft-focus glamour',
-    chip: 'Dreamy layers',
     description:
       'Floaty fabrics, rose tones, and delicate embellishments create dreamy outfits for date night and beyond.',
     items: ['Wrap midi dress', 'Lace blouse', 'Soft cardigan', 'Mary Jane flats'],
@@ -38,7 +35,6 @@ const styleSpotlights = {
   Minimalist: {
     title: 'Minimalist capsule formula',
     tagline: 'Luxury in balance',
-    chip: 'Sculpted basics',
     description:
       'Clean silhouettes, sculptural accessories, and a restrained palette create elevated ease.',
     items: ['Relaxed blazer', 'Column dress', 'Wide-leg trousers', 'Sleek ankle boots'],
@@ -56,8 +52,7 @@ const spotlightTagline = document.querySelector('[data-style-tagline]');
 const spotlightDescription = document.querySelector('[data-style-description]');
 const spotlightList = document.querySelector('[data-style-list]');
 const spotlightLink = document.querySelector('[data-style-link]');
-const spotlightDisplay = document.querySelector('.spotlight-display');
-const spotlightChip = document.querySelector('[data-style-chip]');
+const spotlightCard = document.querySelector('.spotlight-card');
 
 function updateSpotlight(styleKey) {
   const data = styleSpotlights[styleKey];
@@ -68,30 +63,28 @@ function updateSpotlight(styleKey) {
     !spotlightDescription ||
     !spotlightList ||
     !spotlightLink ||
-    !spotlightTagline ||
-    !spotlightChip
+    !spotlightTagline
   ) {
     return;
   }
 
-  if (spotlightDisplay) {
-    spotlightDisplay.classList.remove('animate');
+  if (spotlightCard) {
+    spotlightCard.classList.remove('animate');
     // Trigger reflow for animation restart
-    void spotlightDisplay.offsetWidth;
+    void spotlightCard.offsetWidth;
   }
 
   spotlightImage.src = data.image;
   spotlightImage.alt = data.alt;
   spotlightTitle.textContent = data.title;
   spotlightTagline.textContent = data.tagline;
-  spotlightChip.textContent = data.chip;
   spotlightDescription.textContent = data.description;
   spotlightList.innerHTML = data.items.map((item) => `<li>${item}</li>`).join('');
   spotlightLink.href = data.href;
   spotlightLink.textContent = data.cta;
 
-  if (spotlightDisplay) {
-    spotlightDisplay.classList.add('animate');
+  if (spotlightCard) {
+    spotlightCard.classList.add('animate');
   }
 }
 
