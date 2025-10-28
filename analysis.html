@@ -56,87 +56,221 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container analysis-grid">
-          <article class="analysis-card" id="body">
-            <header>
+      <section class="section tool-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Interactive diagnostics</span>
+            <h2>Discover your style profile</h2>
+            <p>
+              Answer a few quick prompts to reveal your body balance, seasonal palette, and signature style. Your
+              results update instantly so you can explore what feels right.
+            </p>
+          </div>
+          <div class="analysis-tool">
+            <div class="analysis-tool-nav" role="tablist" aria-label="Analysis tools">
+              <button class="tool-tab active" type="button" role="tab" aria-selected="true" data-target="body-tool">
+                Body type finder
+              </button>
+              <button class="tool-tab" type="button" role="tab" aria-selected="false" data-target="colour-tool">
+                Colour palette decoder
+              </button>
+              <button class="tool-tab" type="button" role="tab" aria-selected="false" data-target="style-tool">
+                Personal style quiz
+              </button>
+            </div>
+            <div class="analysis-tool-panels">
+              <section class="tool-panel active" id="body-tool" role="tabpanel">
+                <form id="body-form" class="tool-form">
+                  <div class="form-row">
+                    <label for="shoulder">Shoulder width</label>
+                    <input id="shoulder" name="shoulder" type="number" inputmode="decimal" min="0" step="0.5" placeholder="cm or inches" required />
+                  </div>
+                  <div class="form-row">
+                    <label for="bust">Bust / chest</label>
+                    <input id="bust" name="bust" type="number" inputmode="decimal" min="0" step="0.5" placeholder="cm or inches" required />
+                  </div>
+                  <div class="form-row">
+                    <label for="waist">Waist</label>
+                    <input id="waist" name="waist" type="number" inputmode="decimal" min="0" step="0.5" placeholder="cm or inches" required />
+                  </div>
+                  <div class="form-row">
+                    <label for="hips">Hip width</label>
+                    <input id="hips" name="hips" type="number" inputmode="decimal" min="0" step="0.5" placeholder="cm or inches" required />
+                  </div>
+                  <button class="btn primary" type="submit">Analyse body type</button>
+                </form>
+                <div class="tool-result" id="body-result" aria-live="polite"></div>
+              </section>
+              <section class="tool-panel" id="colour-tool" role="tabpanel" hidden>
+                <form id="colour-form" class="tool-form">
+                  <div class="form-row">
+                    <label for="undertone">Undertone</label>
+                    <select id="undertone" name="undertone" required>
+                      <option value="" disabled selected>Select your undertone</option>
+                      <option value="warm">Warm &mdash; gold jewellery flatters</option>
+                      <option value="cool">Cool &mdash; silver jewellery shines</option>
+                      <option value="neutral">Neutral &mdash; both metals suit</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <label for="depth">Overall depth</label>
+                    <select id="depth" name="depth" required>
+                      <option value="" disabled selected>How light or deep are your features?</option>
+                      <option value="light">Light &mdash; hair, skin, and eyes are soft</option>
+                      <option value="medium">Medium &mdash; a gentle contrast</option>
+                      <option value="deep">Deep &mdash; dark hair or eyes, rich colouring</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <label for="contrast">Contrast level</label>
+                    <select id="contrast" name="contrast" required>
+                      <option value="" disabled selected>How strong is the contrast in your face?</option>
+                      <option value="low">Low contrast &mdash; similar tones overall</option>
+                      <option value="medium">Medium contrast &mdash; defined but soft</option>
+                      <option value="high">High contrast &mdash; dramatic differences</option>
+                    </select>
+                  </div>
+                  <button class="btn primary" type="submit">Reveal colour palette</button>
+                </form>
+                <div class="tool-result" id="colour-result" aria-live="polite"></div>
+              </section>
+              <section class="tool-panel" id="style-tool" role="tabpanel" hidden>
+                <form id="style-form" class="tool-form">
+                  <fieldset>
+                    <legend>How do you like outfits to feel?</legend>
+                    <div class="radio-grid">
+                      <label><input type="radio" name="mood" value="classic" required /> Polished &amp; timeless</label>
+                      <label><input type="radio" name="mood" value="edgy" /> Bold &amp; high-energy</label>
+                      <label><input type="radio" name="mood" value="romantic" /> Soft &amp; feminine</label>
+                      <label><input type="radio" name="mood" value="minimalist" /> Calm &amp; effortless</label>
+                      <label><input type="radio" name="mood" value="bohemian" /> Artistic &amp; free-spirited</label>
+                      <label><input type="radio" name="mood" value="modernist" /> Sleek &amp; architectural</label>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Which textures call your name?</legend>
+                    <div class="checkbox-grid">
+                      <label><input type="checkbox" name="textures" value="tailored" /> Crisp tailoring</label>
+                      <label><input type="checkbox" name="textures" value="denim" /> Denim &amp; leather</label>
+                      <label><input type="checkbox" name="textures" value="lace" /> Lace &amp; drape</label>
+                      <label><input type="checkbox" name="textures" value="knit" /> Smooth knits</label>
+                      <label><input type="checkbox" name="textures" value="woven" /> Handwoven details</label>
+                      <label><input type="checkbox" name="textures" value="sculptural" /> Sculptural fabrics</label>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Your go-to weekend look?</legend>
+                    <div class="radio-grid">
+                      <label><input type="radio" name="weekend" value="classic" required /> Blazer, denim, loafers</label>
+                      <label><input type="radio" name="weekend" value="edgy" /> Moto jacket, boots, graphic tee</label>
+                      <label><input type="radio" name="weekend" value="romantic" /> Midi dress, wrap sweater</label>
+                      <label><input type="radio" name="weekend" value="minimalist" /> Tonal set, sleek sneakers</label>
+                      <label><input type="radio" name="weekend" value="bohemian" /> Wide-leg pants, embroidered top</label>
+                      <label><input type="radio" name="weekend" value="modernist" /> Monochrome layers, structured bag</label>
+                    </div>
+                  </fieldset>
+                  <button class="btn primary" type="submit">See personal style</button>
+                </form>
+                <div class="tool-result" id="style-result" aria-live="polite"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reference">
+        <div class="container analysis-reference-grid">
+          <article class="analysis-card" id="body" aria-labelledby="body-heading">
+            <header class="analysis-card-header">
               <span class="eyebrow">Body type</span>
-              <h2>How to identify your body balance</h2>
+              <h2 id="body-heading">How to identify your body balance</h2>
             </header>
-            <p>
-              Stand in front of a mirror wearing fitted clothing. Note where your shoulders, waist, and hips
-              align. Use a flexible tape measure to confirm proportions. The goal isn&rsquo;t perfection &mdash; it&rsquo;s
-              understanding the beautiful geometry you already have.
-            </p>
-            <ul>
-              <li><strong>Hourglass:</strong> Shoulders and hips align with a defined waist.</li>
-              <li><strong>Rectangle:</strong> Shoulders, waist, and hips are similar in width.</li>
-              <li><strong>Pear:</strong> Hips are wider than shoulders; waist is well-defined.</li>
-              <li><strong>Apple:</strong> Midsection is fuller with slender legs.</li>
-              <li><strong>Inverted triangle:</strong> Shoulders are broader than hips.</li>
-            </ul>
-            <p class="tip">
-              Take a photo and trace the outline to see your shape more clearly. Identifying your balance helps
-              you select silhouettes that celebrate your favorite features.
-            </p>
+            <div class="analysis-card-body">
+              <p>
+                Stand in front of a mirror wearing fitted clothing. Note where your shoulders, waist, and hips
+                align. Use a flexible tape measure to confirm proportions. The goal isn&rsquo;t perfection &mdash; it&rsquo;s
+                understanding the beautiful geometry you already have.
+              </p>
+              <ul class="analysis-points">
+                <li><strong>Hourglass:</strong> Shoulders and hips align with a defined waist.</li>
+                <li><strong>Rectangle:</strong> Shoulders, waist, and hips are similar in width.</li>
+                <li><strong>Pear:</strong> Hips are wider than shoulders; waist is well-defined.</li>
+                <li><strong>Apple:</strong> Midsection is fuller with slender legs.</li>
+                <li><strong>Inverted triangle:</strong> Shoulders are broader than hips.</li>
+              </ul>
+            </div>
+            <footer class="analysis-card-footer">
+              <p class="tip">
+                Take a photo and trace the outline to see your shape more clearly. Identifying your balance helps
+                you select silhouettes that celebrate your favorite features.
+              </p>
+            </footer>
           </article>
-          <article class="analysis-card" id="colour">
-            <header>
+          <article class="analysis-card" id="colour" aria-labelledby="colour-heading">
+            <header class="analysis-card-header">
               <span class="eyebrow">Colour analysis</span>
-              <h2>Skin tone, undertone, and palette</h2>
+              <h2 id="colour-heading">Skin tone, undertone, and palette</h2>
             </header>
-            <p>
-              Work with natural daylight and a clean face. Compare silver and gold jewelry against your skin,
-              then hold up white and cream fabrics. These quick tests reveal whether your undertones lean warm,
-              cool, or neutral.
-            </p>
-            <div class="chip-grid">
-              <span class="chip warm">Warm undertone</span>
-              <span class="chip cool">Cool undertone</span>
-              <span class="chip neutral">Neutral undertone</span>
+            <div class="analysis-card-body">
+              <p>
+                Work with natural daylight and a clean face. Compare silver and gold jewelry against your skin,
+                then hold up white and cream fabrics. These quick tests reveal whether your undertones lean warm,
+                cool, or neutral.
+              </p>
+              <div class="chip-grid">
+                <span class="chip warm">Warm undertone</span>
+                <span class="chip cool">Cool undertone</span>
+                <span class="chip neutral">Neutral undertone</span>
+              </div>
+              <p>
+                Once you confirm undertone, evaluate the depth of your features &mdash; light, medium, or deep.
+                Combine undertone and depth to land on your seasonal palette. That palette guides fabric colors,
+                metals, and even makeup shades that make you glow.
+              </p>
+              <ul class="analysis-points">
+                <li><strong>Springs:</strong> Warm and bright. Think buttercream, melon, aqua, and poppy red.</li>
+                <li><strong>Summers:</strong> Cool and soft. Misty blue, lavender, rose quartz, and pewter.</li>
+                <li><strong>Autumns:</strong> Warm and muted. Olive, ochre, copper, and deep teal.</li>
+                <li><strong>Winters:</strong> Cool and high contrast. Icy pink, cobalt, emerald, and jet black.</li>
+              </ul>
             </div>
-            <p>
-              Once you confirm undertone, evaluate the depth of your features &mdash; light, medium, or deep. Combine
-              undertone and depth to land on your seasonal palette. That palette guides fabric colors, metals,
-              and even makeup shades that make you glow.
-            </p>
-            <ul class="palette-list">
-              <li><strong>Springs:</strong> Warm and bright. Think buttercream, melon, aqua, and poppy red.</li>
-              <li><strong>Summers:</strong> Cool and soft. Misty blue, lavender, rose quartz, and pewter.</li>
-              <li><strong>Autumns:</strong> Warm and muted. Olive, ochre, copper, and deep teal.</li>
-              <li><strong>Winters:</strong> Cool and high contrast. Icy pink, cobalt, emerald, and jet black.</li>
-            </ul>
-            <p class="tip">
-              Still unsure? Snap a selfie in natural light wearing a white tee. Apply a warm filter, then a cool
-              filter. The one that looks most natural hints at your undertone.
-            </p>
+            <footer class="analysis-card-footer">
+              <p class="tip">
+                Still unsure? Snap a selfie in natural light wearing a white tee. Apply a warm filter, then a cool
+                filter. The one that looks most natural hints at your undertone.
+              </p>
+            </footer>
           </article>
-          <article class="analysis-card" id="style">
-            <header>
+          <article class="analysis-card" id="style" aria-labelledby="style-heading">
+            <header class="analysis-card-header">
               <span class="eyebrow">Personal style</span>
-              <h2>Spot your signature aesthetic</h2>
+              <h2 id="style-heading">Spot your signature aesthetic</h2>
             </header>
-            <p>
-              Look at your three favorite outfits and list the repeating elements: colors, fabrics, shapes, and
-              moods. Do you reach for sharp tailoring, romantic draping, or bold statements? Those repeating
-              choices point to your core style personality.
-            </p>
-            <div class="style-tags">
-              <span>Classic</span>
-              <span>Edgy</span>
-              <span>Romantic</span>
-              <span>Minimalist</span>
-              <span>Bohemian</span>
-              <span>Modernist</span>
+            <div class="analysis-card-body">
+              <p>
+                Look at your three favorite outfits and list the repeating elements: colors, fabrics, shapes, and
+                moods. Do you reach for sharp tailoring, romantic draping, or bold statements? Those repeating
+                choices point to your core style personality.
+              </p>
+              <div class="style-tags">
+                <span>Classic</span>
+                <span>Edgy</span>
+                <span>Romantic</span>
+                <span>Minimalist</span>
+                <span>Bohemian</span>
+                <span>Modernist</span>
+              </div>
+              <p>
+                Match your notes to the style tag that resonates most. Then explore the builder and lookbooks to
+                see how that aesthetic translates into real outfits.
+              </p>
             </div>
-            <p>
-              Match your notes to the style tag that resonates most. Then explore the builder and lookbooks to
-              see how that aesthetic translates into real outfits.
-            </p>
-            <p class="tip">
-              Pinterest boards, saved Instagram posts, and camera roll screenshots reveal your true style
-              cravings. Gather them into one album and look for patterns.
-            </p>
+            <footer class="analysis-card-footer">
+              <p class="tip">
+                Pinterest boards, saved Instagram posts, and camera roll screenshots reveal your true style
+                cravings. Gather them into one album and look for patterns.
+              </p>
+            </footer>
           </article>
         </div>
       </section>
@@ -189,6 +323,7 @@
       </div>
       <p class="footer-note">&copy; <span id="year"></span> Capsule Wardrobe Studio. All rights reserved.</p>
     </footer>
+    <script src="scripts/analysis.js"></script>
     <script src="scripts/global.js"></script>
   </body>
 </html>
