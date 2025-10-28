@@ -272,65 +272,41 @@ a:focus {
     );
 }
 
-.studio-grid {
+
+.section.studio > .container {
   display: grid;
   gap: clamp(2rem, 5vw, 3.5rem);
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  align-items: start;
 }
 
-.studio-copy {
+.studio-lede {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.4rem;
+  max-width: 28rem;
 }
 
-.studio-copy p {
+.studio-lede p {
   color: var(--muted-foreground);
   font-size: 1.05rem;
 }
 
-.studio-highlights {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1.25rem;
-}
-
-.studio-highlights li {
-  background: var(--card);
-  border: 1px solid color-mix(in oklch, var(--border) 65%, transparent);
-  border-radius: calc(var(--radius) * 1.4);
-  padding: 1.25rem 1.4rem;
-  box-shadow: 0 18px 32px -26px rgba(15, 23, 42, 0.3);
-}
-
-.studio-highlight-title {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.45rem;
-  color: var(--foreground);
-}
-
-.studio-highlights p {
-  margin: 0;
-  color: var(--muted-foreground);
-}
-
-.studio-panels {
+.studio-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 .studio-card {
   background: var(--card);
-  border-radius: calc(var(--radius) * 1.6);
+  border-radius: calc(var(--radius) * 1.5);
   border: 1px solid color-mix(in oklch, var(--border) 65%, transparent);
-  padding: 1.75rem;
-  box-shadow: 0 20px 36px -28px rgba(15, 23, 42, 0.32);
-  display: grid;
+  padding: 1.65rem;
+  box-shadow: 0 20px 34px -30px rgba(15, 23, 42, 0.35);
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
+  min-height: 100%;
 }
 
 .studio-card h3 {
@@ -373,20 +349,22 @@ a:focus {
 
 .narrative-grid {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(2.5rem, 6vw, 3.75rem);
   align-items: start;
 }
 
 .narrative-lede {
   display: grid;
   gap: 1.25rem;
+  max-width: 28rem;
 }
 
 .narrative-details {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 .narrative-card {
@@ -394,7 +372,11 @@ a:focus {
   border-radius: calc(var(--radius) * 1.2);
   border: 1px solid color-mix(in oklch, var(--border) 65%, transparent);
   padding: 1.85rem;
-  box-shadow: 0 20px 36px -28px rgba(23, 27, 53, 0.28);
+  box-shadow: 0 18px 32px -28px rgba(23, 27, 53, 0.24);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-height: 100%;
 }
 
 .narrative-card h3 {
@@ -515,19 +497,28 @@ a:focus {
 .spotlight-layout {
   position: relative;
   display: grid;
-  gap: 2rem;
-  align-items: start;
+  gap: clamp(1.75rem, 4vw, 2.5rem);
+  align-items: stretch;
   z-index: 1;
 }
 
+.spotlight-sidebar {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklch, var(--muted) 92%, white) 0%,
+    color-mix(in oklch, var(--secondary) 24%, white) 100%
+  );
+  border-radius: calc(var(--radius) * 1.8);
+  border: 1px solid color-mix(in oklch, var(--border) 65%, transparent);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  display: grid;
+  gap: 1.75rem;
+  box-shadow: 0 26px 44px -34px rgba(15, 23, 42, 0.3);
+}
+
 .spotlight-nav {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 0.75rem;
-  padding: 0.75rem;
-  background: color-mix(in oklch, var(--muted) 88%, white);
-  border-radius: calc(var(--radius) * 1.5);
-  border: 1px solid color-mix(in oklch, var(--border) 70%, transparent);
 }
 
 .spotlight-tab {
@@ -539,6 +530,10 @@ a:focus {
   color: var(--foreground);
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .spotlight-tab:hover,
@@ -553,6 +548,40 @@ a:focus {
   border-color: var(--primary);
 }
 
+.spotlight-footnote {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.spotlight-footnote h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.spotlight-benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+  color: var(--muted-foreground);
+}
+
+.spotlight-benefits li {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+}
+
+.spotlight-benefits li::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--primary);
+  margin-top: 0.4rem;
+}
+
 .spotlight-card {
   display: grid;
   gap: 1.75rem;
@@ -562,7 +591,7 @@ a:focus {
   border-radius: calc(var(--radius) * 1.8);
   border: 1px solid color-mix(in oklch, var(--border) 60%, transparent);
   background: var(--card);
-  box-shadow: 0 24px 40px -28px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 24px 44px -34px rgba(15, 23, 42, 0.32);
 }
 
 .spotlight-card.animate {
@@ -621,7 +650,7 @@ a:focus {
   border-radius: calc(var(--radius) * 1.4);
   overflow: hidden;
   border: 1px solid color-mix(in oklch, var(--border) 58%, transparent);
-  box-shadow: 0 18px 32px -24px rgba(15, 23, 42, 0.28);
+  box-shadow: 0 16px 30px -26px rgba(15, 23, 42, 0.24);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   flex: 0 0 clamp(280px, 65vw, 340px);
   scroll-snap-align: center;
@@ -631,13 +660,13 @@ a:focus {
 .carousel-card:focus-within {
   transform: translateY(-4px);
   border-color: color-mix(in oklch, var(--primary) 50%, var(--border));
-  box-shadow: 0 22px 36px -24px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 20px 36px -28px rgba(15, 23, 42, 0.28);
 }
 
 .carousel-card.is-active {
   border-color: color-mix(in oklch, var(--primary) 60%, var(--border));
   transform: translateY(-6px);
-  box-shadow: 0 24px 40px -26px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 24px 40px -30px rgba(15, 23, 42, 0.3);
 }
 
 .carousel-media {
@@ -1339,9 +1368,16 @@ textarea:focus-visible,
 }
 
 @media (min-width: 900px) {
+  .section.studio > .container {
+    grid-template-columns: minmax(260px, 320px) 1fr;
+  }
+
+  .narrative-grid {
+    grid-template-columns: minmax(260px, 320px) 1fr;
+  }
+
   .spotlight-layout {
-    grid-template-columns: minmax(200px, 0.95fr) minmax(320px, 1.25fr);
-    align-items: start;
+    grid-template-columns: minmax(240px, 0.9fr) minmax(360px, 1.2fr);
   }
 }
 
@@ -1383,6 +1419,10 @@ textarea:focus-visible,
 @media (max-width: 720px) {
   .hero {
     padding-top: 4.25rem;
+  }
+
+  .spotlight-sidebar {
+    padding: 1.25rem;
   }
 
   .spotlight-tabs {
