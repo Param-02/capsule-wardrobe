@@ -1196,6 +1196,7 @@ textarea {
 .tool-form {
   display: grid;
   gap: 1.25rem;
+  align-content: start;
 }
 
 .tool-form .form-row {
@@ -1221,15 +1222,36 @@ textarea {
 .checkbox-grid {
   display: grid;
   gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .radio-grid label,
 .checkbox-grid label {
   display: flex;
-  gap: 0.5rem;
-  align-items: center;
+  gap: 0.65rem;
+  align-items: flex-start;
   font-weight: 500;
   color: var(--muted-foreground);
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 1.4);
+  line-height: 1.4;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.radio-grid label:hover,
+.checkbox-grid label:hover {
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, var(--card) 92%);
+}
+
+.radio-grid input,
+.checkbox-grid input {
+  accent-color: var(--primary);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
 }
 
 .tool-result {
@@ -1238,6 +1260,12 @@ textarea {
   padding: 1.5rem;
   border: 1px solid var(--border);
   min-height: 5rem;
+}
+
+.tool-form .btn {
+  justify-self: start;
+  padding-inline: 1.75rem;
+  width: max-content;
 }
 
 .result-card {
@@ -1281,10 +1309,18 @@ textarea {
   gap: 0.5rem;
 }
 
+.analysis-card-header > * {
+  margin: 0;
+}
+
 .analysis-card-body {
   display: grid;
   gap: 1rem;
   color: var(--muted-foreground);
+}
+
+.analysis-card-body > * {
+  margin: 0;
 }
 
 .analysis-points {
